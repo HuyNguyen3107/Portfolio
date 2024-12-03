@@ -1,25 +1,7 @@
-import { IconType } from "react-icons";
-import {
-  SiExpress,
-  SiMongodb,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiPostgresql,
-  SiPrisma,
-  SiPusher,
-  SiReact,
-  SiStripe,
-  SiTailwindcss,
-  SiTypescript,
-} from "react-icons/si";
-
 export type ProjectProps = {
   id: number;
   name: string;
   description: string;
-  technologies: IconType[];
-  techNames: string[];
-  techLinks: string[];
   github: string;
   demo: string;
   image: string;
@@ -30,140 +12,66 @@ export const projects = [
   {
     id: 0,
     name: "Greenchop",
-    description: "",
-    technologies: [
-      SiTypescript,
-      SiReact,
-      SiNextdotjs,
-      SiTailwindcss,
-      SiPrisma,
-      SiPostgresql,
-    ],
-    techNames: [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Prisma",
-      "PostgreSQL",
-    ],
-    techLinks: [
-      "https://www.typescriptlang.org/",
-      "https://reactjs.org/",
-      "https://nextjs.org/",
-      "https://tailwindcss.com/",
-      "https://www.prisma.io/",
-      "https://www.postgresql.org/",
-    ],
-    github: "https://github.com/RiverNguyen/trello-clone",
-    demo: "https://taskify.tech",
-    image: "/projects/taskify.png",
+    description:
+      "Giao diện được cắt từ Figma, sử dụng HTML, CSS và SASS để xây dựng. Trang web có thể hiển thị trên nhiều thiết bị khác nhau với responsive áp dụng grid-system.",
+    github:
+      "https://github.com/HuyNguyen3107/Projects/tree/main/Greenchop/htmlcss_project",
+    demo: "https://huynguyen3107.github.io/Projects/Greenchop/htmlcss_project/index.html",
+    image: "/projects/greenchop.jpg",
     available: true,
   },
   {
     id: 1,
-    name: "Messenger Clone",
+    name: "Player Music",
     description:
-      "Một ứng dụng nhắn tin trực tuyến theo thời gian thực, cho phép người dùng trò chuyện với nhau qua các tin nhắn văn bản, hình ảnh.",
-    technologies: [
-      SiTypescript,
-      SiReact,
-      SiNextdotjs,
-      SiTailwindcss,
-      SiPusher,
-      SiPrisma,
-    ],
-    techNames: [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Pusher",
-      "Prisma",
-    ],
-    techLinks: [
-      "https://www.typescriptlang.org/",
-      "https://reactjs.org/",
-      "https://nextjs.org/",
-      "https://tailwindcss.com/",
-      "https://pusher.com/",
-      "https://www.prisma.io/",
-    ],
-    github: "https://github.com/RiverNguyen/messenger-clone",
-    demo: "https://river-messenger.vercel.app/",
-    image: "/projects/messenger.png",
+      "Một ứng dụng nghe nhạc đơn giản với các chức năng cơ bản như phát, tạm dừng, tua nhạc, chọn bài hát, chuyển bài hát tiếp theo và chức năng hát karaoke. Được xây dựng bằng HTML, CSS và JavaScript.",
+
+    github: "https://github.com/HuyNguyen3107/Projects/tree/main/Player",
+    demo: "https://huynguyen3107.github.io/Projects/Player/player.html",
+    image: "/projects/palyer.jpg",
     available: true,
   },
   {
     id: 2,
-    name: "E-commerce Website",
+    name: "Blog",
     description:
-      "Một trang web thương mại điện tử với các chức năng cơ bản như xem sản phẩm, thêm vào giỏ hàng, thanh toán.",
-    technologies: [
-      SiTypescript,
-      SiReact,
-      SiNextdotjs,
-      SiTailwindcss,
-      SiPrisma,
-      SiPostgresql,
-      SiStripe,
-    ],
-    techNames: [
-      "Typescript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Prisma",
-      "PostgreSQL",
-      "Stripe",
-    ],
-    techLinks: [
-      "https://www.typescriptlang.org/",
-      "https://reactjs.org/",
-      "https://nextjs.org/",
-      "https://tailwindcss.com/",
-      "https://www.prisma.io/",
-      "https://www.postgresql.org/",
-      "https://stripe.com/",
-    ],
-    github: "https://github.com/RiverNguyen/e-commerce",
-    demo: "https://ecommerce-store-river.vercel.app/",
-    image: "/projects/ecommerce1.png",
+      "Một trang blog cá nhân với các bài viết về lập trình và học tập được xây dựng với HTML, CSS và JavaScript. Sử dụng access token và refresh token để xác thực người dùng và duy trì đăng nhập.",
+
+    github: "https://github.com/HuyNguyen3107/Projects/tree/main/Blog",
+    demo: "https://huynguyen3107.github.io/Projects/Blog/blog.html",
+    image: "/projects/blog.jpg",
     available: true,
   },
   {
     id: 3,
-    name: "E-commerce Website",
+    name: "Guess Number",
     description:
-      "Một trang web thương mại điện tử bán giày với các chức năng cơ bản như xem sản phẩm, thêm vào giỏ hàng, thanh toán.",
-    technologies: [
-      SiTypescript,
-      SiReact,
-      SiTailwindcss,
-      SiNodedotjs,
-      SiExpress,
-      SiMongodb,
-    ],
-    techNames: [
-      "Typescript",
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-    ],
-    techLinks: [
-      "https://www.typescriptlang.org/",
-      "https://reactjs.org/",
-      "https://nextjs.org/",
-      "https://tailwindcss.com/",
-      "https://nodejs.org/",
-      "https://expressjs.com/",
-      "https://www.mongodb.com/",
-    ],
-    github: "https://github.com/RiverNguyen/NHShop-Project",
-    demo: "https://ecommerce-shoe-six.vercel.app/",
-    image: "/projects/ecommerce2.png",
+      "Một trò chơi đoán số với giao diện đẹp và thân thiện. Người chơi sẽ phải đoán số mà chương trình đã chọn ngẫu nhiên. Sử dụng ReactJS để xây dựng và Redux để quản lý global state.",
+
+    github: "https://github.com/HuyNguyen3107/Projects/tree/main/Guess-Number",
+    demo: "https://guess-number-one-zeta.vercel.app/",
+    image: "/projects/guess-number.jpg",
+    available: true,
+  },
+  {
+    id: 4,
+    name: "Shop",
+    description:
+      "Một trang web bán hàng đơn giản với các chức năng cơ bản như xem sản phẩm, thêm vào giỏ hàng, xóa sản phẩm khỏi giỏ hàng, tăng giảm số lượng sản phẩm, tính tổng tiền, thanh toán, xem chi tiết sản phẩm và phân trang. Sử dụng ReactJS , Redux Toolkit và React Router Dom để điều hướng trang.",
+
+    github: "https://github.com/HuyNguyen3107/Projects/tree/main/Shop",
+    demo: "https://shop-blush-delta.vercel.app/",
+    image: "/projects/shop.jpg",
+    available: true,
+  },
+  {
+    id: 5,
+    name: "Beefree",
+    description:
+      "Một công cụ tạo email hoặc giao diện web với mục đích marketing. Sử dụng NextJS, Redux Toolkit, FireBase, Dnd kit, Tailwind, NextUI, ExpressJS, Sequelize, PostgreSQL, Passport và các công nghệ khác.",
+    github: "https://github.com/HuyNguyen3107/Beefree",
+    demo: "https://beefree-three.vercel.app/",
+    image: "/projects/beefree.jpg",
     available: true,
   },
 ];

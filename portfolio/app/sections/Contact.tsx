@@ -72,11 +72,7 @@ const Contact = () => {
                 charSpace={"mr-[0.01em]"}
               />
             </Link>
-            <Link
-              href="https://www.linkedin.com/in/river1309/"
-              target="_blank"
-              aria-label="View linkedin Profile"
-            >
+            <Link href="!#" target="_blank" aria-label="View linkedin Profile">
               <AnimatedTitle
                 text={"LINKEDIN "}
                 className={

@@ -9,12 +9,12 @@ import Blur from "./components/overlay/Blur.tsx";
 import Color from "./components/overlay/Color.tsx";
 
 import About from "./sections/About.tsx";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
-import Hero from "./sections/Hero";
-import NavBar from "./sections/NavBar";
+import Contact from "./sections/Contact.tsx";
+import Footer from "./sections/Footer.tsx";
+import Hero from "./sections/Hero.tsx";
+import NavBar from "./sections/NavBar.tsx";
 import Tools from "./sections/Tools.tsx";
-import Work from "./sections/Work";
+import Work from "./sections/Work.tsx";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
